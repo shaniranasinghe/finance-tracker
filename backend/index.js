@@ -1,17 +1,17 @@
 import express from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
-import connectDB from "./finance-tracker/config/db.js";
-import route from "./finance-tracker/routes/userRoute.js";
-import authRoutes from "./finance-tracker/routes/authRoute.js";
-import transactionRoutes from "./finance-tracker/routes/transactionRoute.js";
-import budgetRoutes from "./finance-tracker/routes/budgetRoute.js";
-import reportRoutes from "./finance-tracker/routes/reportRoute.js";
-import "./finance-tracker/jobs/recurringTransactionJob.js";
-import goalRoutes from "./finance-tracker/routes/goalRoute.js";
-import notificationRoutes from "./finance-tracker/routes/notificationRoute.js";
-import systemSettingsRoute from "./finance-tracker/routes/systemSettingsRoute.js";
-import dashboardRoutes from "./finance-tracker/routes/dashboardRoute.js";
+import connectDB from "./config/db.js";
+import route from "./routes/userRoute.js";
+import authRoutes from "./routes/authRoute.js";
+import transactionRoutes from "./routes/transactionRoute.js";
+import budgetRoutes from "./routes/budgetRoute.js";
+import reportRoutes from "./routes/reportRoute.js";
+import "./jobs/recurringTransactionJob.js";
+import goalRoutes from "./routes/goalRoute.js";
+import notificationRoutes from "./routes/notificationRoute.js";
+import systemSettingsRoute from "./routes/systemSettingsRoute.js";
+import dashboardRoutes from "./routes/dashboardRoute.js";
 
 dotenv.config();
 
